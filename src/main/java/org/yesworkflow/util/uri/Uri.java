@@ -38,7 +38,7 @@ public abstract class Uri {
 	 *                              prior to further processing.
 	 * 
 	 */
-	public UriBase(String expression, boolean trimTerminalSlash) {
+	public Uri(String expression, boolean trimTerminalSlash) {
 
 		if (trimTerminalSlash) {
 			this.expression = trimTerminalSlash(expression);
@@ -63,7 +63,7 @@ public abstract class Uri {
 	 * @param uriString			A string representation of the full 
 	 *                        	URI or URI template to construct.
 	 */
-	public UriBase(String uriString) {
+	public Uri(String uriString) {
 		this(uriString, false);
 	}
 	
