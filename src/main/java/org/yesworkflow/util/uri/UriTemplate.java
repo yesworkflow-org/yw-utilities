@@ -25,7 +25,7 @@ import org.yesworkflow.util.io.FileIO;
  * This file is derived from UriTemplate.java in the org.restflow.data package
  * as of 28Apr2015.
  */
-public class UriTemplate extends Uri {
+public class UriTemplate extends UriBase {
 
     private static Long nextUriVariableId = 1L;
     
