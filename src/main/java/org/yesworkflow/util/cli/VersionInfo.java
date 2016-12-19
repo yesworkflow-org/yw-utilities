@@ -67,8 +67,7 @@ public class VersionInfo {
         buildVersion = gitProperties.getProperty("git.build.version");
 
         productVersion = productName + " " + buildVersion + "-" + gitCommitsSinceTag;
-        qualifiedVersion = productVersion + " (" 
-                            + (gitBranch.equals("master") ? "branch " : "BRANCH ") + gitBranch + 
+        qualifiedVersion = productVersion + " (branch " + gitBranch + 
                             ", commit " + gitCommitAbbrev + 
                             ")";
         
